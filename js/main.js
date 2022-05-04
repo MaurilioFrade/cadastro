@@ -5,7 +5,7 @@ function cadastrar() {
         {
             nome: document.getElementById("firshname").value,
             sobrenome: document.getElementById("lastname").value,
-            vemail: document.getElementById("email").value,
+            email: document.getElementById("email").value,
             senha: document.getElementById("number").value,
             confSenha: document.getElementById("password").value,
             celular: document.getElementById("confirmpassword").value,
@@ -16,10 +16,10 @@ function cadastrar() {
     localStorage.setItem('ListaUser', JSON.stringify(ListaUser))
 
     //limpar campos
-    document.getElementById("firshname").value = ""
-    document.getElementById("lastname").value = ""
-    document.getElementById("email").value = ""
-    document.getElementById("number").value = ""
-    document.getElementById("password").value = ""
-    document.getElementById("confirmpassword").value = ""
+    document.getElementById("firshname").value = "",
+        document.getElementById("lastname").value = "",
+        document.getElementById("email").value = "",
+        document.getElementById("number").value = "",
+        document.getElementById("password").value = "",
+        document.getElementById("confirmpassword").value = ""
 }
